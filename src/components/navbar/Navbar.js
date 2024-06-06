@@ -1,14 +1,12 @@
 import './Navabar.css'
 import Container from 'react-bootstrap/Container';
-
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-
 import Offcanvas from 'react-bootstrap/Offcanvas';
 function MyNavbar(){
     const expand = 'md'
     return(
-        <Navbar key={expand}  expand={expand} bg="primary" className="bg-body-tertiary bgColor mb-3">
+        <Navbar style={{backgroundColor: '#7fadcd'}} key={expand}  expand={expand}  className=" mb-3">
           <Container fluid>
             <Navbar.Brand href="#">Navbar Offcanvas</Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
