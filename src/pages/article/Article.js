@@ -1,12 +1,10 @@
 import MyNavbar from "../../components/navbar/Navbar"
-function About(){
+function Article(){
     return(
         <div>
             <MyNavbar/>
-            <h1>aboout page</h1>
+            <h1>aboout article</h1>
         </div>
-
-        
     )
 }
-export default About
+export default Article

@@ -1,6 +1,10 @@
+import MyNavbar from "../../components/navbar/Navbar"
 function Course (){
     return(
-        <h1>about course</h1>
+        <div>
+            <MyNavbar/>
+            <h1>aboout course</h1>
+        </div>
     )
 }
 export default Course

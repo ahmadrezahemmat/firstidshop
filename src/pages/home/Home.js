@@ -4,6 +4,8 @@ function Home(){
     return(
         <div>
             <MyNavbar/>
+            <h1>about home</h1>
+            
         </div>
     )
 }
