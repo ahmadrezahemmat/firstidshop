@@ -7,6 +7,10 @@ import appleid from '../../assets/images/appleid.webp'
 import notActive from '../../assets/images/not active.webp'
 import password from '../../assets/images/password.webp'
 import icloud from '../../assets/images/icloud.webp'
+import Footer from "../../components/footer/Footer"
+
+
+
 
 function Home(){
     const [courses, setCourses] = useState([
@@ -59,6 +63,9 @@ function Home(){
                     ) )}
                 </Row>
             </Container>
+            <Footer/>
+            
+            
             
         </div>
     )
