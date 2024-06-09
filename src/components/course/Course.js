@@ -1,6 +1,8 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
- function Course({title,img,text,telegramLink}){
+import { Link } from 'react-router-dom';
+import './Course.css'
+ function Course({title,img,text,id}){
     return(
         <Card >
         <Card.Img variant="top" src={img} />
@@ -9,9 +11,11 @@ import Card from 'react-bootstrap/Card';
           <Card.Text>
             {text}
           </Card.Text>
-          <a href={`https://t.me/${telegramLink}`} target="_blank" rel="noopener noreferrer">
-                    <Button variant="primary">اطلاعات بیشتر</Button>
-          </a>
+          <Button variant="primary">
+            <Link to={`/coursev/${id}`} className='buy-btn'>
+               خرید محصول
+            </Link>
+          </Button>
         </Card.Body>
       </Card>
     )

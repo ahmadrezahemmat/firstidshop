@@ -3,44 +3,13 @@ import { Container,Row,Col } from "react-bootstrap"
 import apple from '../../assets/images/apple.svg'
 import Course from "../../components/course/Course"
 import { useState } from "react"
-import appleid from '../../assets/images/appleid.webp'
-import notActive from '../../assets/images/not active.webp'
-import password from '../../assets/images/password.webp'
-import icloud from '../../assets/images/icloud.webp'
 import Footer from "../../components/footer/Footer"
-
+import {courseData} from '../../data'
 
 
 
 function Home(){
-    const [courses, setCourses] = useState([
-        {   id:1,
-            title:'اپل آیدی',
-            text:'خدمات اپل آیدی با فرست آیدی شاپ',
-            img: appleid,
-            telegramLink:'@firstidshop'
-        },
-        {   id:2,
-            title:' سرویس رفع نات اکتیو',
-            text:'     سرویس رفع نات اکتیو',
-            img: notActive,
-            telegramLink:'@firstidshop'
-
-        },
-        {   id:3,
-            title:' شخصی سازی اپل آیدی',
-            text:'    شخصی سازی اپل آیدی   ',
-            img: password,
-            telegramLink:'@firstidshop'
-        },
-        {   id:4,
-            title:' سرویس حذف آیکلود',
-            text:'خدمات اپل آیدی با فرست آیدی شاپ',
-            img: icloud,
-            telegramLink:'@firstidshop'
-        }
-
-    ])
+    const [courses, setCourses] = useState(courseData)
     return(
         <div>
             <MyNavbar/>
