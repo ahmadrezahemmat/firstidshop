@@ -12,16 +12,16 @@ function Course() {
     <div>
       <MyNavbar />
       <Container>
-        <Row>
-          <Col>
-            <img src={courseInfo.img} />
+        <Row className="align-items-center">
+          <Col md={5}>
+            <img src={courseInfo.img}  />
           </Col>
-          <Col>
+          <Col md={7} className="my-3">
             <h2 style={{ fontFamily: "Lalehzar" }}>{courseInfo.title}</h2>
             <p>
               <b>{courseInfo.text}</b>
             </p>
-            <p>
+            <p style={{textAlign:'justify'}}>
               Apple ID همانند شناسنامه کاربران گوشی آیفون است. ساخت اپل آیدی
               اولین پیش‌نیاز جهت بهره بردن از استور غنی و خدمات دستگاه‌های اپل
               از جمله آیفون‌ها به شمار می‌رود. یکی از سخت‌گیری‌های اپل در چند

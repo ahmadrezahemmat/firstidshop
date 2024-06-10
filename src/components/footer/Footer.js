@@ -11,7 +11,7 @@ function Footer(){
                         <p>یکی از مزایای اصلی ساخت اپل آیدی با ایمیل شخصی، افزایش امنیت و قابلیت بازیابی آسان‌تر حساب کاربری است که در مقایسه با استفاده از ایمیل‌های فیک، اطمینان بیشتری را برای کاربران فراهم می‌کند</p>
                     </Col>
                     <Col style={{textAlign:'left'}}>
-                        <img src='https://cdn.zarinpal.com/badges/trustLogo/1.svg' />
+                        <img src='https://cdn.zarinpal.com/badges/trustLogo/1.svg' className="img1" />
                     </Col>
                 </Row>
             </Container>
