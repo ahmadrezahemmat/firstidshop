@@ -1,10 +1,12 @@
-import MyNavbar from "../../components/navbar/Navbar"
-function Panel(){
-    return(
-        <div>
-            <MyNavbar/>
-            <h1>aboout panell</h1>
-        </div>
-    )
+
+import MyNavbar from "../../components/navbar/Navbar";
+function Panel() {
+  return (
+    <div>
+      <MyNavbar />
+      <h1>setting page</h1>
+    </div>
+  );
 }
-export default Panel
+
+export default Panel;
