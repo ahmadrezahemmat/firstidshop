@@ -2,13 +2,15 @@ import { useState } from "react";
 import MyNavbar from "../../components/navbar/Navbar";
 import "./Login.css";
 import Swal from "sweetalert2";
+import { useNavigate } from "react-router-dom";
 function Login() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+  const navigate = useNavigate()
 
   const submitHandler = () => {
     if (username == "hemmatahmad374@gmail.com" && password == "Ahmad70a@") {
-      console.log("welcome");
+      navigate("/panel")
     } else {
       Swal.fire({
         title: "Error!",

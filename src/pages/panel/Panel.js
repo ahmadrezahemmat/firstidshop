@@ -4,7 +4,7 @@ function Panel() {
   return (
     <div>
       <MyNavbar />
-      <h1>setting page</h1>
+      <h1>panel page</h1>
     </div>
   );
 }
