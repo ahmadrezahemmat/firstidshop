@@ -6,15 +6,18 @@ import { useNavigate } from "react-router-dom";
 function Login() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   const submitHandler = () => {
-    if (username == "hemmatahmad374@gmail.com" && password == "Ahmad70a@") {
-      navigate("/panel")
+    if (username == "admin" && password == "12345") {
+      document.cookie =
+        "username=admin; expires=Thu, 18 Dec 2025 12:00:00 UTC";
+
+      navigate("/panel");
     } else {
       Swal.fire({
         title: "Error!",
-        text: "Do you want to continue",
+        text: "username and password is wrong",
         icon: "error",
         confirmButtonText: "Close",
       });
